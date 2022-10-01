@@ -10,8 +10,12 @@ using WebServer.Hubs;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
+
+var encodings = Encoding.GetEncodings();
 //解決使用CSVHelper,中文亂碼問題
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+var encodings2 = Encoding.GetEncodings();
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -15,7 +15,7 @@ namespace WebServer.Controllers
     {
         private readonly ILogger<StreamingController> _logger;
         private static readonly FormOptions _defaultFormOptions = new FormOptions();
-        private string[] _permittedExtensions = new string[] { ".jpg", ".png" }; //允許的檔案類型
+        private string[] _permittedExtensions = null;// new string[] { ".jpg", ".png" }; //允許的檔案類型
         private long _fileSizeLimit = 50 * 1024 * 1024; // 50MB, 檔案大小限制
         private string _targetFilePath; // 儲存路徑
         private readonly WebServerDBContext _WebServerDBContext;

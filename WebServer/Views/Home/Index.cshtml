@@ -29,8 +29,7 @@
         $(async () => {
             $(document).on('click', '#btnDownload', async function (e) {
                 var id = $('#inputFileId').val();
-                if (id === null || id === undefined || id.length === 0)
-                {
+                if (id === null || id === undefined || id.length === 0) {
                     alert('請輸入檔案ID');
                     return;
                 }
